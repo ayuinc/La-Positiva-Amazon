@@ -32,7 +32,7 @@ $config['allow_extensions'] = 'y';
 $config['site_label'] = 'La Positiva';
 $config['cookie_prefix'] = '';
 $config['cookie_domain'] = "";
-//$config['secure_forms'] = "n";
+$config['secure_forms'] = "n";
 
 
 //------------------------------STUFF ADDED--------------------------
