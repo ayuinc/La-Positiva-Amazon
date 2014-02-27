@@ -1,0 +1,112 @@
+{embed="includes/header"}
+
+<body class="antialiased">
+    <section id="fifth-section">
+        <div class="row">
+            {exp:get_post_vars parse="inward"}
+            <div class="large-8 large-centered medium-10 medium-centered small-10 small-centered text-center columns">
+                <h1>{get_name} {get_surname}</h1>
+                {exp:registro:registrar_cliente marca="{post_brand}" modelo="{post_model}" version="{post_version}" precio="{post_precio}" ano="{post_ano}" dni="{post_dni}" name="{post_name}" surname="{post_surname}" email="{post_email}" phone="{post_phone}" res_ci="{post_respci}" perd_robo="{post_ptr}" perd_choque="{post_ptch}" da_propios="{post_dpch}"}{/exp:registro:registrar_cliente}
+                <p class="thanks-email">{post_email}</p>
+            </div>
+
+            <div class="large-8 large-centered medium-10 medium-centered small-10 small-centered text-center columns">
+                <p class="thanks-2nd-msg">EN BREVE TE ESTAREMOS CONTACTANDO PARA COMPLETAR EL PROCESO DE VENTA. MUCHAS GRACIAS.</p>
+            </div>
+            <div class="row">
+            <div class="large-5 large-centered medium-5 medium-centered small-12 columns">
+                <!-- AddThis Button BEGIN -->
+                <div class="addthis_toolbox addthis_default_style" >
+					<a class="addthis_button_facebook_like" fb:like:layout="button_count" addthis:url="{site_url}" addthis:title="La Positiva Seguros"  addthis:description="Acabo de cotizar un seguro para mi auto. Cotízalo tu también desde S/. 19 mensuales."></a>
+					<a style="width:5.8em;" class="addthis_button_tweet" tw:text="Acabo de cotizar un seguro para mi auto. Cotiza tu #PackVehicular desde S/. 19 mensuales." tw:via="LaPositiva_Peru" addthis:url="{site_url}"></a>
+					<a class="addthis_counter addthis_pill_style" addthis:url="{site_url}" addthis:title="Acabo de cotizar un seguro para mi auto. Cotiza tu #PackVehicular desde S/. 19 mensuales."  addthis:description="La Positiva Seguros"></a>
+                </div>
+                <script type="text/javascript">var addthis_config = {"data_track_addressbar":true};</script>
+				<script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=hermanmarin"></script>
+                <!-- AddThis Button END -->
+            </div>
+            </div>
+            <div class="large-5 large-centered medium-6 medium-centered small-10 small-centered text-center columns">
+                <br>
+                <a href="{site_url}" class="button button-orange">VOLVER A COTIZAR</a>
+            </div>
+
+            {/exp:get_post_vars}
+        </div>
+    </section>
+{embed="includes/footer"}
+
+{exp:get_post_vars parse="inward"}
+{exp:send_email 
+        from_name="La Positiva Seguros" 
+        from_email="lineapositiva@lapositiva.com.pe" 
+        to="coloradomarin@gmail.com" 
+        subject="Cotización Pack Vehicular La Positiva"
+    }
+    Por favor contactar al usuario {post_name} {post_surname} al teléfono {post_phone}. El usuario ha realizado la siguiente cotización del seguro Pack Vehicular:<br>
+    <br>
+    <b>Datos del vehículo cotizado:</b><br>
+    <br>
+       * Marca: {post_brand}<br>
+       * Modelo: {post_model}<br>
+       * Versión: {post_version}<br>
+       * Año: {post_ano}<br>
+       * Valor comercial del auto: US$ {post_precio}<br> 
+    <br>
+    <b>Datos de coberturas seleccionadas y prima mensual:</b><br>
+        <br>   
+         * Pérdida Total por robo : S/. {post_ptr} mensuales.<br>
+         * Pérdida Total por choque : S/. {post_ptch} mensuales.<br>
+         * Daño propio por choque : S/. {post_dpch} mensuales.<br>
+         * Responsabilidad Civil : S/. {post_respci} mensuales.<br>
+    <br>
+        Prima Total: <b>S./ {post_total_prima} mensuales.</b> <br>
+    <br>
+    En caso no puedan contactarlo por teléfono, por favor escribirle al correo <b>{post_email}</b>
+{/exp:send_email} 
+
+{exp:send_email 
+        from_name="La Positiva Seguros" 
+        from_email="lineapositiva@lapositiva.com.pe" 
+        to="{post_email}" 
+        subject="Cotización Pack Vehicular La Positiva"
+    }
+Hola {post_name} {post_surname},<br>
+<br>
+Muchas gracias por cotizar tu Pack Vehicular de La Positiva.<br>
+<br>
+En breve te estaremos contactando para completar el proceso de venta.<br>
+<br>
+    Los detalles de tu cotización son los siguientes:<br>
+    <br>
+    <b>Datos del vehículo cotizado:</b><br>
+    <br>
+       * Marca: {post_brand}<br>
+       * Modelo: {post_model}<br>
+       * Versión: {post_version}<br>
+       * Año: {post_ano}<br>
+       * Valor comercial del auto: US$ {post_precio}<br> 
+    <br>
+    <b>Datos de coberturas seleccionadas y prima mensual:</b><br>
+        <br>
+        * Responsabilidad Civil : S/. {post_respci} mensuales.<br>
+        * Pérdida por robo : S/. {post_ptr} mensuales.<br>
+        * Pérdida por choque :  S/. {post_ptch} mensuales.<br> 
+        * Daños propios por choque : S/. {post_dpch} mensuales.<br> 
+    <br>
+        Prima Total: <b>S./ {post_total_prima} mensuales.</b> <br>
+    <br>
+    <b>Datos del propietario:</b><br>
+        * Nombre: {post_name} {post_surname}<br>
+        * Teléfono: {post_phone}<br>
+    <br>
+    Si tienes alguna duda o si este correo te ha llegado sin haber realizado una cotización en línea, por favor escríbenos al siguiente correo: lineapositiva@lapositiva.com o llámanos al 211-0212 desde Lima o al 749001 desde provincias.<br>
+    <br>
+    Muchas gracias,<br>
+    <br>
+    El equipo de La Positiva Seguros<br>
+    www.lapositiva.com.pe<br>
+    <br>
+{/exp:send_email} 
+
+{/exp:get_post_vars}

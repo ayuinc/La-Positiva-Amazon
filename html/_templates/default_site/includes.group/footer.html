@@ -1,0 +1,73 @@
+	{if segment_1!='' AND last_segment!='gracias' AND last_segment!='gracias_phone'}
+	<div class="row volver-cotizar">
+	    <div class="medium-centered medium-4 medium-centered small-8 small-centered columns">
+	    	<a href="{site_url}"><button class="button-orange-claro large">VOLVER A COTIZAR</button></a>
+	    </div>
+    </div>
+    {/if}
+
+    <div class="fixed-footer-bottom-trigger"></div>
+
+    <footer {if  last_segment=='mas_de_15k' OR last_segment=='menor_de_10k' OR last_segment == 'entre_10k_y_15k' OR last_segment=='gracias_phone' OR last_segment=='gracias'} class="naranja" {/if}>
+        <div id="curve" class="hide-for-small-only {if last_segment=='mas_de_15k' OR last_segment=='menor_de_10k' OR last_segment == 'entre_10k_y_15k' OR last_segment=='gracias_phone' OR last_segment=='gracias'}naranja {/if}"></div>
+        <div class="row">
+            <div class="large-10 large-uncentered medium-10 medium-uncentered small-10 small-centered columns">
+                <ul class="inline-list">
+                    <li>
+                        <a href="http://www.facebook.com/LaPositivaSeguros" target="_blank"><span {if  last_segment=='mas_de_15k' OR last_segment=='menor_de_10k' OR last_segment == 'entre_10k_y_15k' OR last_segment=='gracias_phone' OR last_segment=='gracias'}class="icon-facebook-blanco"{if:else}class="icon-facebook"{/if}></span></a>
+                    </li>
+                    <li>
+                        <a href="http://twitter.com/LaPositiva_Peru" target="_blank"><span {if  last_segment=='mas_de_15k' OR last_segment=='menor_de_10k' OR last_segment == 'entre_10k_y_15k' OR last_segment=='gracias_phone' OR last_segment=='gracias'}class="icon-twitter-blanco"{if:else}class="icon-twitter"{/if}></span></a>
+                    </li>
+                    <li>
+                        <a href="#" class="show-for-medium-up {if last_segment=='mas_de_15k' OR last_segment=='menor_de_10k' OR last_segment == 'entre_10k_y_15k' OR last_segment=='gracias_phone' OR last_segment=='gracias'}blanco{/if}" data-reveal-id="terms">Términos y Condiciones</a>
+                        <a href="{path='content/pop-ups'}#terms-2" class="show-for-small-only {if  last_segment=='mas_de_15k' OR last_segment=='menor_de_10k' OR last_segment == 'entre_10k_y_15k' OR last_segment=='gracias_phone' OR last_segment=='gracias'}blanco{/if}" target="_blank">Términos y Condiciones</a>
+                    </li>
+                    <li>
+                        <a href="#" class="show-for-medium-up {if  last_segment=='mas_de_15k' OR  last_segment=='menor_de_10k' OR last_segment == 'entre_10k_y_15k' OR last_segment=='gracias_phone' OR last_segment=='gracias'} blanco{/if}" target="_blank" data-reveal-id="banner-contactanos">Contáctanos</a>
+                        <a href="{site_url}/img/banner.png" class="show-for-small-only {if  last_segment=='mas_de_15k' OR last_segment=='menor_de_10k' OR last_segment == 'entre_10k_y_15k' OR last_segment=='gracias_phone' OR last_segment=='gracias'}blanco{/if}" target="_blank">Contáctanos</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="large-2 large-uncentered medium-2 medium-uncentered small-4 small-centered text-center columns">
+                <a href="{site_url}">
+                	{if  last_segment=='mas_de_15k' OR last_segment=='menor_de_10k' OR last_segment == 'entre_10k_y_15k' OR last_segment=='gracias_phone' OR last_segment=='gracias'}
+                	<img src="{site_url}/img/logo_blanco.png" alt="La Positiva Seguros">
+                	{if:else}
+                	<img src="{site_url}/img/logo.png" alt="La Positiva Seguros">
+					{/if}
+                </a>
+            </div>
+        </div>
+    </footer>
+    
+    {if segment_2 == "menor_de_10k" || segment_2 == "entre_10k_y_15k"} 
+        {embed="includes/fixed-footer"}
+    {/if}
+    
+    {embed="includes/pop-ups"}
+
+    <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-47225593-1', 'lapositive.pe');
+        ga('send', 'pageview');
+
+    </script>   
+    
+	{if last_segment!='gracias_phone' OR last_segment!='gracias'}
+    <script src="{site_url}/js/jquery.js"></script>
+    {/if}
+    <script src="{site_url}/js/foundation.min.js"></script>
+    {if last_segment!='gracias_phone' OR last_segment!='gracias'}
+    <script src="{site_url}/js/waypoints.min.js"></script>
+    <script src="{site_url}/js/positiva.js"></script>
+    {/if}
+    <script src="{site_url}/js/spin.min.js"></script>
+    
+    
+</body>
+</html>

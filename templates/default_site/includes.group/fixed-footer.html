@@ -1,0 +1,40 @@
+<section class="fixed-footer show-for-large-only">
+    <div class="row">
+        <form id="cotizar" class="quote quote-fixed" method="POST" action="#">
+            <input type="hidden" name="XID" value="{XID_HASH}" /> 
+            <div class="large-3 medium-3 hide-for-small-only columns">
+                <span class="selector-big">
+                    {exp:filtros:brand}
+                </span>
+            </div>
+            <div class="large-2 medium-2 hide-for-small-only columns">
+                <span class="selector-big">
+                    <select name="modelo" id="modelo">
+                      <option value="MODELO" selected>MODELO</option>
+                    </select>
+                </span>
+            </div>
+            <div class="large-2 medium-2 hide-for-small-only columns">
+                <span class="selector-big">
+                    <select name="version" id="version">
+                      <option value="VERSIÓN" selected>VERSIÓN</option>
+                    </select>
+                </span>
+            </div>
+            <div class="large-2 medium-2 hide-for-small-only columns">
+                <span class="selector-big">
+                    <select name="precio" id="ano">
+                      <option value="AÑO" selected>AÑO</option>
+                    </select>
+                </span>
+            </div>
+            <div class="large-3 large-uncentered medium-3 medium-uncentered small-7 small-centered hide-for-small-only columns">
+            <input id="form_ano" type="hidden" name="ano">
+            <button class="expand" type="submit">COTIZAR OTRO VEHÍCULO</button>
+            </div>
+            <div class="small-9 small-centered columns show-for-small-only">
+                <a href="{site_url}" class="button">COTIZAR OTRO VEHÍCULO</a>
+            </div>
+        </form>
+    </div>
+</section>

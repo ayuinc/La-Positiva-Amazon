@@ -1,0 +1,899 @@
+/*
+*   @author:   Ricardo Díaz
+*   @version: 1.0
+*   Ayu 2013
+*
+*   Structure
+*   1. Generic Styles
+*   2. Footer
+*   3. Index Page
+*   4. Second Page
+*   5. Third Page
+*/
+
+/*------------------------------------------------------*/
+/* 1. Generic Styles */
+/*------------------------------------------------------*/
+
+html, body {
+  height: 100%;
+  text-rendering: optimizeLegibility;
+}
+
+p {
+    margin: 0 !important;
+}
+
+/*------------------------------------------------------*/
+/* 2. Footer */
+/*------------------------------------------------------*/
+
+footer {
+    position: relative;
+    background: #FFCEB2;
+    height: 10%;
+    padding: 0.8em 0;
+}
+
+footer img {
+    margin-top: 4px;
+}
+
+footer ul {
+    line-height: 43px;
+    margin: 0 !important;
+}
+
+footer ul li a {
+    font-family: "Open Sans", sans-serif;
+    color: #FF5522;
+    transition: 0.2s ease color;
+    -webkit-transition: 0.2s ease color;
+    -moz-transition: 0.2s ease color;
+    -ms-transition: 0.2s ease color;
+}
+
+footer ul li a:hover {
+    color: #934800;
+}
+
+#curve{
+    position: absolute;
+    height: 20px;
+    top: -15px;
+    right: 0;
+    background: #FFCEB2;
+    border-top-left-radius: 100% 100%;
+    -moz-border-top-left-radius: 100% 100%;
+    -ms-border-top-left-radius: 100% 100%;
+    -webkit-border-top-left-radius: 100% 100%;
+    width: 70%;
+}
+
+/*------------------------------------------------------*/
+/* 2. Index Page */
+/*------------------------------------------------------*/
+
+.quote select {
+    -moz-appearance:window;
+    color: #FF5522;
+    background: #eee url("../img/down_arrow.svg") no-repeat 95% center;
+    border: none;
+    border-bottom: 4px solid #cccccc;
+    height: 60px;
+    /*padding: 0 1em;*/
+    font-size: 1.1rem;
+    font-family: "Open Sans", sans-serif;
+}
+
+.quote select:hover {
+    -moz-appearance:window;
+    background: #eee url("../img/down_arrow.svg") no-repeat 95% center;
+    border: none;
+    border-bottom: 4px solid #cccccc;
+}
+
+.quote button[type="submit"] {
+    background: #FFCEB2;
+    border-bottom: 4px solid #F0AA82;
+    color: #FF5522;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 1.5em;
+    height: 60px;
+    letter-spacing: 1px;
+    line-height: 0.9;
+}
+
+#primary {
+    color: #FFCEB2;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 3em;
+    letter-spacing: 2px;
+    line-height: 1.1;
+    margin: 0;
+}
+
+#first-section {
+    background: #FF5522;
+    padding: 2.5em 0;
+    min-height: 90%;
+}
+
+#first-section > .row {
+    margin-bottom: 2.5em;
+}
+
+#first-section > .row:last-child, #first-section > .row:first-child{
+    margin-bottom: 0;
+}
+
+#price-msg p {
+    color: #FFCEB2;
+    font-size: 1.5em;
+    font-family: 'Open Sans', sans-serif;
+    /*line-height: 0.9;*/
+    vertical-align: top;
+}
+
+#price-msg, #price{
+    text-align: center;
+}
+
+.price-first, .price-quantity, .price-montly {
+    margin: 0;
+    display: inline-block;
+    line-height: 1;
+    vertical-align: top;
+    -webkit-font-smoothing: antialiased;
+}
+
+.price-first, .price-quantity {
+    color: #fff;
+    font-family: 'Bowlby One SC', cursive;
+    font-size: 1.9em;
+}
+
+.price-quantity {
+    font-size: 3.4em;
+    letter-spacing: -5px;
+    line-height: 0.9;
+    margin-right: 5px;
+}
+
+.price-montly {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    display: block;
+}
+
+.full-width {
+    max-width: 80%;
+    margin: 0 auto;
+}
+
+/*------------------------------------------------------*/
+/* 4. Second Page */
+/*------------------------------------------------------*/
+
+#second-section {
+    background: #FF5522;
+    padding: 2.5em 0;
+    height: 35%
+}
+
+#second-section p {
+    color: #FFCEB2;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.4em;
+    margin: 0;
+}
+
+#second-section h2, #second-section h3 {
+    font-family: "Bowlby One SC", cursive;
+    font-size: 1.8em;
+    margin: 0;
+}
+
+#second-section h2 {
+    color: #FFF;
+    text-transform: uppercase;
+}
+
+#second-section h3 {
+    color: #fff;
+}
+
+#low-price {
+    font-size: 0.8em;
+}
+
+#third-section {
+    background: #F7F7F7 url("../img/down.png") no-repeat top center;
+    padding: 3em 0;
+}
+
+#third-section > .row {
+    margin-bottom: 3em;
+}
+
+#third-section > .row:last-child {
+    margin-bottom: 0em;
+}
+
+.marketing{
+    color: #FF5522;
+    font-size: 1.1em;
+    font-family: "Bowlby One SC", cursive;
+    letter-spacing: 1px;
+}
+    
+.marketing a {
+    color: #FF5522;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.7em;
+    font-style: italic;
+    letter-spacing: normal;
+    text-decoration: underline;
+}
+
+.checkbox-row {
+    margin: 0 15px;
+}
+
+.info-row {
+    background: #FF5522;
+    min-height: 215px;
+    padding: 1.5em 1.5em;
+    position: relative;
+}
+
+.info-price {
+    color: #fff;
+    font-family: "Bowlby One SC", cursive;
+    font-size: 3.5em;
+    margin: 0;
+    letter-spacing: -5px;
+    line-height: 1.2;
+}
+
+.info-bottom {
+    background: #FFCEB2;
+    bottom: 0;
+    color: #FF5522;
+    left: 0;
+    padding: 4px 0;
+    position: absolute;
+    width: 100%;
+}
+
+.info-bottom p {
+    font-size: .9em;
+    font-weight: 500;
+}
+
+.info-description {
+    color: #fff;
+    font-size: .9em;
+}
+
+.info-form select {
+    -moz-appearance:window;
+    background: #eee url("../img/down_arrow.svg") no-repeat 95% center;
+    border: none;
+    border-bottom: 4px solid #cccccc;
+    color: #FF5522;
+    padding: 0.5rem;
+    font-size: 0.9rem;
+}
+
+.info-form select:hover {
+    -moz-appearance:window;
+    background: #eee url("../img/down_arrow.svg") no-repeat 95% center;
+    border: none;
+    border-bottom: 4px solid #cccccc;
+}
+
+@-moz-document url-prefix() {
+    .selector {
+        background: #eee url("../img/down_arrow.svg") no-repeat 95% center;
+        border: none;
+        border-bottom: 4px solid #cccccc;
+        color: #FF5522;
+        padding: 0.5rem 0;
+        font-size: 0.9rem;
+    }
+
+    .selector-big {
+        color: #FF5522;
+        background: #eee url("../img/down_arrow.svg") no-repeat 95% center;
+        border: none;
+        border-bottom: 4px solid #cccccc;
+        height: 50px;
+        padding: 12px 0;
+        font-size: 1.1rem;
+    }
+} 
+
+.info-tooltip {
+    background: #FFCEB2;
+    color: #FF5522;
+    font-weight: bold;
+    padding: 5px 6px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    transition: 0.2s ease color;
+    -webkit-transition: 0.2s ease color;
+    -moz-transition: 0.2s ease color;
+    -ms-transition: 0.2s ease color;
+}
+
+.info-tooltip:hover {
+    color: #934800;
+}
+
+
+.total {
+    border: 1px solid #FF5522;
+    background: #FFCEB2;
+}
+
+.total-left {
+    background: #FF5522;
+    color: #fff;
+    height: 100%;
+}
+
+.total-left p:first-child {
+    font-family: "Open Sans", sans-serif;
+    font-size: .8em;
+}
+
+.total-left p:last-child {
+    font-family: "Bowlby One SC", cursive;
+    font-size: 3em;
+    line-height: 1;
+}
+
+.total-right {
+    background: #FFCEB2;
+    color: #FF5522;
+    padding: 1px 1em;
+}
+
+.total-right p {
+    font-size: 0.9em;
+    font-style: italic;
+}
+
+.total-right a {
+    color: #FF5522;
+    font-family: "Open Sans", sans-serif;
+    font-size: 0.8em;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5px;
+    right: 15px;
+}
+
+#contact-form {
+
+}
+
+#contact-form input[type="text"] {
+    background: #eee;
+    border: none;
+    border-bottom: 4px solid #ccc;
+    color: #FF5522;
+    font-size: 1.1em;
+    font-weight: 300;
+    height: 50px;
+    box-shadow: none;
+}
+
+::-webkit-input-placeholder {
+    color: #FF9254;
+}
+:-moz-placeholder {
+    color: #FF9254;
+}
+::-moz-placeholder {
+    color: #FF9254;
+}
+:-ms-input-placeholder { 
+    color: #FF9254;
+}
+
+#contact-form input[type="checkbox"] {
+    display:none;
+}
+
+#contact-form input[type="checkbox"] + label {
+    color: #525252;
+    margin: 0;
+    line-height: 43px;
+}
+#contact-form input[type="checkbox"] + label span {
+    display:inline-block;
+    width:30px;
+    height:40px;
+    margin: 1em auto;
+    vertical-align:middle;
+    background:url(../img/checkbox2.png) left top no-repeat;
+    cursor:pointer;
+}
+
+#contact-form input[type="checkbox"]:checked + label span {
+    background:url(../img/checkbox2.png) -30px top no-repeat;
+}
+
+.button-orange {
+    background: #FF5522;
+    font-family: "Bowlby One SC", cursive;
+    padding: 0.5em 2em;
+    border-bottom: 4px solid #B96500;
+    letter-spacing: 1px;
+    transition: 0.3s ease background;
+    -webkit-transition: 0.3s ease background;
+    -moz-transition: 0.3s ease background;
+    -ms-transition: 0.3s ease background;
+}
+
+.button-orange:hover {
+    background: #F17228;
+}
+
+#locate {
+    background: #FFCEB2;
+    padding: 1em 1.5em;
+}
+
+#locate-form select {
+    -moz-appearance:window;
+    background: #eee url("../img/down_arrow.svg") no-repeat 95% center;
+    border: none;
+    border-bottom: 4px solid #cccccc;
+    color: #FF5522;
+    height: 50px;
+    padding: 0.5rem;
+    font-size: 1em;
+    font-family: sans-serif;
+    font-weight: 300;
+}
+
+#locate-form select:hover {
+    -moz-appearance:window;
+    background: #eee url("../img/down_arrow.svg") no-repeat 95% center;
+    border: none;
+    border-bottom: 4px solid #cccccc;
+}
+
+#locate-msg {
+    color: #FF5522;
+    font-size: 1.2em;
+    font-family: "Bowlby One SC", cursive;
+    letter-spacing: -1px;
+}
+
+.result p:first-child {
+    font-weight: bold;
+}
+
+.result p {
+    font-family: "Open Sans", sans-serif;
+    color: #525252;
+    font-size: 0.9em;
+}
+
+.result a {
+    font-family: "Open Sans", sans-serif;
+    color: #525252;
+    font-size: 0.8em;
+    text-decoration: underline;
+    transition: 0.2s ease padding-left;
+}
+
+.result a:hover{
+    padding-left: 0.4em;
+}
+
+/*----------------------------------------*/
+/* check-box */
+/*----------------------------------------*/
+
+.checkbox-form input[type="checkbox"] {
+    display:none;
+}
+
+.checkbox-form input[type="checkbox"] + label {
+    color: #525252;
+    margin: 0;
+}
+.checkbox-form input[type="checkbox"] + label span {
+    display:inline-block;
+    width:46px;
+    height:43px;
+    margin: 1em auto;
+    vertical-align:middle;
+    background:url(../img/checkbox.png) left top no-repeat;
+    cursor:pointer;
+}
+
+.checkbox-form input[type="checkbox"]:checked + label span {
+    background:url(../img/checkbox.png) -38px top no-repeat;
+}
+
+.fixed-footer {
+    background: #FFCEB2;
+    padding: 1em 0;
+    display: block;
+    height: 90px;
+    width: 100%;
+    position: fixed;
+    z-index: 1000;
+    bottom: -8rem;
+    -webkit-transition: bottom 0.6s ease-in-out;
+    -moz-transition: bottom 0.6s ease-in-out;
+    -o-transition: bottom 0.6s ease-in-out;
+    transition: bottom 0.6s ease-in-out;
+}
+
+.is-fixed {
+    bottom: 0;
+}
+
+.quote-fixed button[type="submit"] {
+    background: #FF5522;
+    font-family: "Bowlby One SC", cursive;
+    color: #fff;
+    font-size: 1em !important;
+    padding: 0.7em 2em;
+    border-bottom: 4px solid #B96500;
+    letter-spacing: 1px;
+    line-height: 1 !important;
+    transition: 0.3s ease background;
+    -webkit-transition: 0.3s ease background;
+    -moz-transition: 0.3s ease background;
+    -ms-transition: 0.3s ease background;
+}
+
+.quote-fixed button[type="submit"]:hover {
+    background: #F17228;
+}
+
+/*------------------------------------------------------*/
+/* 5. Third Page */
+/*------------------------------------------------------*/
+
+#fourth-section {
+    background: #F7F7F7 url("../img/down.png") no-repeat top center;
+    padding: 3em 0;
+    height: 55%;
+}
+
+#auto-seguro {
+    background: #FF5522;
+    padding: 2em 1.5em;
+    border-bottom: 1.8em solid #FFCEB2;
+    margin-top: 3px;
+}
+
+#auto-seguro p {
+    color: #FFCEB2;
+    font-family: "Bowlby One SC", sans-serif;
+    font-size: 2.3em;
+    line-height: 1;
+}
+
+#auto-seguro-msg {
+    padding: 0 3.5em;
+}
+
+#auto-seguro-msg p {
+    color: #525252;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1.3em;
+    line-height: 1.7;
+    padding-bottom: 1em;
+}
+
+.orange {
+    color: #FF5522;
+}
+
+.reveal-modal {
+    left: 60%;
+    width: 60%;
+}
+
+#info p {
+    font-family: "Open Sans", sans-serif;
+    margin-bottom: 0.5em !important;
+}
+
+/*------------------------------------------------------*/
+/* 5. Fourth Page */
+/*------------------------------------------------------*/
+
+#fifth-section
+{
+    background: #F7F7F7;
+    color: #525252;
+    height: 90%;
+    font-family: "Open Sans", Helvetica, sans-serif;
+    padding: 12% 0;
+}
+
+#fifth-section h1 {
+    color: #FF5522;
+    font-family: "Bowlby One SC", cursive;
+    font-size: 3em;
+}
+
+.thanks-msg {
+    font-size: 1.8em;
+}
+
+.thanks-email {
+    font-size: 1.6em;
+    margin-bottom: 1.5em !important;
+}
+
+.thanks-2nd-msg {
+    font-size: 1.4em;
+}
+
+/*------------------------------------------------------*/
+/* 6. Reveals */
+/*------------------------------------------------------*/
+
+#terms {
+    height: 70%;
+    overflow: scroll;
+}
+
+.reveal-modal p, .reveal-modal h4{
+    color: #525252;
+}
+
+p.lead {
+    color: #FF5522;
+    margin: 0.5em 0 !important;
+}
+
+.reveal-modal .close-reveal-modal {
+    color: #FF5522;
+}
+
+p.italic {
+    font-style: italic;
+}
+
+#locate, #contact {
+    display: none;
+}
+
+input[type=radio] {  
+    display: none;  
+}
+
+.radio-label {  
+    display: inline-block;  
+    cursor: pointer;  
+    position: relative;  
+    padding-left: 25px;  
+    margin-right: 15px;  
+}
+
+.radio-label:before {  
+    content: "";  
+    display: inline-block;  
+    border-radius: 8px;
+    width: 16px;  
+    height: 16px;  
+  
+    margin-right: 10px;  
+    position: absolute;  
+    left: 0;  
+    bottom: -1px;  
+    background-color: #eee;  
+    box-shadow: inset 0px 2px 3px 0px rgba(0, 0, 0, .3), 0px 1px 0px 0px rgba(255, 255, 255, .8);  
+}  
+
+input[type=radio]:checked + .radio-label:before {  
+    content: "\2022";  
+    color: #FF5522;  
+    font-size: 30px;  
+    text-align: center;  
+    line-height: 18px;  
+}
+
+/*------------------------------------------------------*/
+/* 6. Media Queries */
+/*------------------------------------------------------*/
+
+@media only screen and (max-width: 40em) {
+/*    #primary {
+        font-size: 3em;
+    }
+
+    #price-msg {
+        text-align: center;
+    }
+
+    #price-msg p {
+        font-size: 1.6em;
+    }
+
+    #price {
+        text-align: center;
+    }
+
+    .price-first {
+        font-size: 2em;
+    }
+
+    .price-quantity {
+        font-size: 3.5em;
+    }
+
+    .price-montly {
+        font-size: 12px;
+    }
+
+    footer {
+        padding: 2% 0;
+    }
+
+    #first-section {
+        padding: 2.5em  0;
+    }
+
+    #second-section {
+        padding: 2.2em 0;
+        height: 35%;
+    }
+
+    #second-section p {
+        font-size: 1.6em;
+    }
+
+    #second-section h2, #second-section h3 {
+        font-size: 2em;
+    }
+
+    .marketing {
+        font-size: 1.2em;
+    }
+
+    .quote select { 
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .quote button[type="submit"] {
+        height: 50px;
+        font-size: 1.5em;
+        line-height: 0.5;
+    }*/
+} /* max-width 640px, mobile-only styles, use when QAing mobile issues */
+
+/*Medium screens*/
+@media only screen and (min-width: 40.063em) {
+    #primary {
+        font-size: 3.5em;
+        line-height: 1;
+    }
+
+    #price-msg p {
+        font-size: 1.6em;
+    }
+
+    .price-first {
+        font-size: 2em;
+    }
+
+    .price-quantity {
+        font-size: 3.6em;
+    }
+}
+
+/*Large screens*/
+@media only screen and (min-width: 64.063em) {
+    #primary {
+        font-size: 5em;
+    }
+
+    #price-msg {
+        text-align: right;
+    }
+
+    #price-msg p {
+        font-size: 1.8em;
+    }
+
+    #price {
+        /*margin-top: 2.5em;*/
+        text-align: left;
+    }
+
+    .price-first {
+        font-size: 2.4em;
+    }
+
+    .price-quantity {
+        font-size: 4em;
+    }
+
+    .price-montly {
+        font-size: 15px;
+    }
+
+    footer {
+        padding: 0.9em 0;
+    }
+
+    #first-section {
+        padding: 2.5em  0;
+    }
+
+    #second-section {
+        padding: 2.2em 0;
+        height: 35%;
+    }
+
+    #second-section p {
+        font-size: 1.6em;
+    }
+
+    #second-section h2, #second-section h3, .marketing{
+        font-size: 2.2rem;
+        letter-spacing: 0.03rem;
+    }
+
+    .marketing {
+        line-height: 1.25;
+    }
+
+    .marketing a {
+        font-size: 0.5em;
+    }
+
+    .info-price {
+        font-size: 3.5em;
+        line-height: 1;
+    }
+
+    .info-description {
+        line-height: 1;
+        margin-bottom: 1.5em !important;
+    }
+
+    .total-left, .total-right {
+        padding: 1.5em;
+    }
+
+    .total-left p:last-child {
+        font-size: 4em;
+    }
+
+    .total-right p {
+        font-size: 1em;
+    }
+
+    .locate {
+        font-size: 1.3em;
+        margin-bottom: 0.5em !important;
+    }
+
+    .quote select { 
+        height: 50px;
+        font-size: 1rem;
+    }
+
+    .quote button[type="submit"] {
+        height: 50px;
+        font-size: 1.5em;
+        line-height: 0.5;
+    }
+}
