@@ -1,0 +1,10 @@
+[Wed Feb 26 23:14:08 2014] [error] [client 190.117.246.37] File does not exist: /var/www/packvehicular.com/html/favicon.ico
+[Thu Feb 27 03:12:09 2014] [error] [client 190.239.133.101] File does not exist: /var/www/packvehicular.com/html/favicon.ico
+[Thu Feb 27 03:12:23 2014] [error] [client 190.239.133.101] script '/var/www/packvehicular.com/html/admin.php' not found or unable to stat
+[Thu Feb 27 03:38:11 2014] [error] [client 201.230.39.22] File does not exist: /var/www/packvehicular.com/html/favicon.ico
+[Thu Feb 27 04:19:45 2014] [error] [client 124.202.143.250] File does not exist: /var/www/packvehicular.com/html/w00tw00t.at.blackhats.romanian.anti-sec:)
+[Thu Feb 27 04:19:45 2014] [error] [client 124.202.143.250] File does not exist: /var/www/packvehicular.com/html/phpMyAdmin
+[Thu Feb 27 04:19:46 2014] [error] [client 124.202.143.250] File does not exist: /var/www/packvehicular.com/html/phpmyadmin
+[Thu Feb 27 04:19:46 2014] [error] [client 124.202.143.250] File does not exist: /var/www/packvehicular.com/html/pma
+[Thu Feb 27 04:19:46 2014] [error] [client 124.202.143.250] File does not exist: /var/www/packvehicular.com/html/myadmin
+[Thu Feb 27 04:19:47 2014] [error] [client 124.202.143.250] File does not exist: /var/www/packvehicular.com/html/MyAdmin
