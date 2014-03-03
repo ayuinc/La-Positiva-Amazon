@@ -1,41 +1,5 @@
 {embed="includes/header"}
 {exp:get_post_vars parse="inward"}
-    
-    
-    
-    
-    
-    {exp:send_email 
-            from_name="La Positiva Seguros" 
-            from_email="lineapositiva@lapositiva.com.pe" 
-            to="lineapositiva@lapositiva.com.pe" 
-            subject="Cotización Pack Vehicular La Positiva"
-        }
-    Por favor contactar al usuario {post_name} {post_surname} al teléfono {post_phone}. El usuario ha realizado la siguiente cotización del seguro Pack Vehicular:<br>
-    <br>
-    <b>Datos del vehículo cotizado:</b><br>
-    <br>
-       * Marca: {post_brand}<br>
-       * Modelo: {post_model}<br>
-       * Versión: {post_version}<br>
-       * Año: {post_ano}<br>
-       * Valor comercial del auto: US$ {post_precio}<br> 
-    <br>
-    <b>Datos de coberturas seleccionadas y prima mensual:</b><br>
-        <br>   
-         * Pérdida Total por robo : S/. {post_ptr} mensuales.<br>
-         * Pérdida Total por choque : S/. {post_ptch} mensuales.<br>
-         * Daño propio por choque : S/. {post_dpch} mensuales.<br>
-         * Responsabilidad Civil : S/. {post_respci} mensuales.<br>
-    <br>
-        Prima Total: <b>S./ {post_total_prima} mensuales.</b> <br>
-    <br>
-    En caso no puedan contactarlo por teléfono, por favor escribirle al correo <b>{post_email}</b>
-    {/exp:send_email} 
-    
-    
-    
-
     {exp:send_email 
             from_name="La Positiva Seguros" 
             from_email="lineapositiva@lapositiva.com.pe" 
