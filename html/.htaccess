@@ -34,6 +34,14 @@ ErrorDocument 404 /index.php/
   RewriteRule "(^|/)\." - [F]
 </IfModule>
 
+AuthUserFile /home/ubuntu/.htpasswd
+AuthName Admin
+AuthType Basic
+
+<Files "casa.php">
+ Require user lapositiva
+</Files>
+
 # remove the www - Uncomment to activate
 <IfModule mod_rewrite.c>
   RewriteCond %{HTTPS} !=on
