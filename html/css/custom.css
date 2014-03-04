@@ -217,7 +217,7 @@ footer ul li a:hover {
 }
 
 #primary {
-    color: #FFCEB2;
+    color: #fff;
     font-family: 'VimSM', cursive;
     font-size: 2.4em;
     letter-spacing: 2px;
@@ -240,7 +240,7 @@ footer ul li a:hover {
 }
 
 #price-msg p {
-    color: #FFCEB2;
+    color: #fff;
     font-size: 1em;
     font-family: 'Open Sans', sans-serif;
     /*line-height: 0.9;*/
@@ -1040,7 +1040,7 @@ input[type=radio]:checked + .radio-label:before {
 /*Large screens*/
 @media only screen and (min-width: 64.063em) {
     #primary {
-        font-size: 5em;
+        font-size: 4.5em;
     }
 
     #price-msg {
