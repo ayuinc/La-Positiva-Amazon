@@ -129,7 +129,8 @@ footer {
 }
 
 footer img {
-    margin-top: 4px;
+    /*margin-top: 4px;*/
+    height: 45px;
 }
 
 footer ul {
@@ -227,7 +228,7 @@ footer ul li a:hover {
 #first-section {
     background: #FF5522;
     padding: 2.5em 0;
-    min-height: 88%;
+    min-height: 90%;
 }
 
 #first-section > .row {
@@ -978,7 +979,7 @@ input[type=radio]:checked + .radio-label:before {
     }
 
     footer {
-        height: 12%;
+        height: 10%;
     }
 
     footer ul {
@@ -1006,7 +1007,7 @@ input[type=radio]:checked + .radio-label:before {
     }
 
     #fifth-section {
-        min-height: 88%;
+        min-height: 90%;
     }
 
     #fifth-section h1 {
@@ -1070,7 +1071,7 @@ input[type=radio]:checked + .radio-label:before {
     }
 
     footer {
-        padding: 1.05em 0;
+        padding: 0.9em 0;
     }
 
     #first-section {
