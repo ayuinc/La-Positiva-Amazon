@@ -1045,11 +1045,11 @@ input[type=radio]:checked + .radio-label:before {
 
     #price-msg {
         text-align: right;
-        margin-left: 2em;
+        /*margin-left: 2em;*/
     }
 
     #price-msg p {
-        font-size: 1.8em;
+        font-size: 1.65em;
         line-height: 1.9;
     }
 
