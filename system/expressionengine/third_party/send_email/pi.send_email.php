@@ -54,6 +54,8 @@ class Send_email {
 
 		// Get the only required parameter
 		$to = $TMPL->fetch_param('to');
+		$cc = $TMPL->fetch_param('cc');
+		$cco = $TMPL->fetch_param('cco');
 
 		// If there's no to, then bail
 		if ( $to == "" )
@@ -90,6 +92,7 @@ class Send_email {
 				$this->EE->email->from($PREFS->ini('webmaster_email'), $PREFS->ini('webmaster_name'));
 			}
 			$this->EE->email->to($to);
+			$this->EE->email->cc($cc.','.$cco);
 			if ($subject)
 			{
 				$this->EE->email->subject($subject);
