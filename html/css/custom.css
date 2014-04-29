@@ -175,6 +175,7 @@ footer ul li a:hover {
 /*------------------------------------------------------*/
 .loading {
     visibility: hidden;
+    margin-top: 15px;
 }
 
 .quote select {
