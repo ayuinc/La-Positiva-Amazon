@@ -89,7 +89,9 @@
     font-size: 1.5em;
     line-height: 43px;
 }
-
+.ie9label{
+    display: none;
+}
 
 html, body {
   height: 100%;
