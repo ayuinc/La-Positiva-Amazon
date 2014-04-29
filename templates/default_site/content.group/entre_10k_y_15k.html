@@ -182,31 +182,33 @@
                     <input type="hidden" name="XID" value="{XID_HASH}" /> 
                     <div class="row">
                         <div class="large-6 columns">
-                            <!--[if lt IE 9]>
-                              <label for="name">Nombre</label>
-                            <![endif]-->
+                            <label class="ie9label" for="name" style="display:none;" >Nombre</label>
                             <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
                             <small class="error">Debe ingresar su nombre.</small>
                         </div>
                         <div class="large-6 columns">
+                            <label class="ie9label" for="surname" style="display:none;" >Apellido</label>
                             <input type="text" name="surname" placeholder="Apellido" required pattern="[a-zA-Z]+">
                             <small class="error">Debe ingresar su apellido.</small>
                         </div>
                     </div>
                     <div class="row">
                         <div class="large-12 columns">
+                            <label class="ie9label" for="email" style="display:none;" >Correo Electrónico</label>
                             <input type="email" name="email" placeholder="Correo Electrónico" required>
                             <small class="error">Debe ingresar su correo electrónico.</small>
                         </div>
                     </div>
                     <div class="row">
                         <div class="large-12 columns">
+                            <label class="ie9label" for="dni" style="display:none;" >DNI</label>
                             <input type="text" name="dni" placeholder="DNI" required pattern="dni" maxlength="8">
                             <small class="error">Debe ingresar su DNI (numérico).</small>
                         </div>
                     </div>
                     <div class="row">
                         <div class="large-12 columns">
+                            <label class="ie9label" for="phone" style="display:none;" >Teléfono</label>
                             <input type="text" name="phone" placeholder="Teléfono" pattern="telef" required maxlength="9">
                             <small class="error">Debe ingresar su teléfono (numérico).</small>
                         </div>
