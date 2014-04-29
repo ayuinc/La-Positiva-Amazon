@@ -1,4 +1,6 @@
 .ie9label{
     display: inline;
-    color: #FF5522;
+    font-size: 1.2em;
+	color: #ff5522;
+	font-weight: 700;
 }
