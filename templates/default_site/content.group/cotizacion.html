@@ -1,0 +1,66 @@
+{exp:get_post_vars parse="inward"}
+<?php  
+	$name = $_GET['a'];
+	$surname = $_GET['b'];
+	$name = str_replace("_", " ",$name);
+	$surname = str_replace("_", " ",$surname);
+?>
+<div style="font-family:Arial, sans-serif;">
+<div style="text-align:left">
+	 <img src="{site_url}/img/lapositiva.png" width="150"alt="la-postiva">
+</div>
+<div style="text-align:center;">
+    <h1>Cotización Pack Vehicular La Positiva</h1>
+</div>
+<div>
+Hola <b><?php echo $name." ".$surname; ?>,</b><br>
+<br>
+Muchas gracias por cotizar tu Pack Vehicular de La Positiva. Lleva tu cotización a cualquier punto de venta de La Positiva y adquiere tu seguro en un instante.<br>
+<br>
+Los detalles de tu cotización son los siguientes:<br>
+<br>
+<b>Datos del vehículo cotizado:</b>
+<br>
+ * Marca: {get_d}<br>
+ * Modelo: {get_e}<br>
+ * Versión: {get_g}<br>
+ * Año: {get_f}<br>
+ * Valor comercial del auto: US$ {get_p}<br>
+<br>
+
+<b>Datos de coberturas seleccionadas y prima mensual: </b><br>
+{if {get_r} != 0 }
+ * Responsabilidad Civil :    S/. {get_r} mensuales.<br>
+{/if}
+{if {get_ptr} != 0 }
+ * Pérdida por robo :         S/. {get_ptr} mensuales.<br>
+{/if}
+{if {get_ptch} != 0 }
+ * Pérdida por choque :       S/. {get_ptch} mensuales. <br>
+{/if}
+{if {get_dpch} != 0 }
+ * Daños propios por choque : S/. {get_dpch} mensuales. <br>
+{/if}
+<br>
+ Prima Total: <b>S./ {get_tp} mensuales.</b> <br>
+<br>
+<b>Datos del propietario:</b><br>
+ * Nombre: {get_a} {get_b}<br>
+ * Teléfono: {get_c}<br>
+<br>
+Si tienes alguna duda o si este correo te ha llegado sin haber realizado una cotización en línea, por favor escríbenos al siguiente correo: lineapositiva@lapositiva.com o llámanos al 211-0212 desde Lima o al 749001 desde provincias.<br>
+<br>
+Muchas gracias,<br>
+<br>
+La Positiva Seguros <br>
+www.lapositiva.com.pe<br>
+</div>
+</div>
+<br>
+<div style="text-align:right;">
+	 <img src="{site_url}/img/rabito1.png" width="150"alt="la-postiva">
+</div>
+<div style="color:#FF5522;text-align:center;">
+	<p style="font-size: 75%;">Lima - Cusco - Piura - Arequipa - Cajamarca - Ica - Chiclayo - Iquitos - Puno - Lambayeque - Trujillo - Tacna - Ucayali - Junin - Ancash</p>
+</div>
+{/exp:get_post_vars}

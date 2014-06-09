@@ -1,0 +1,280 @@
+{embed="includes/header"}
+    {exp:get_post_vars parse="inward"}
+    <section id="second-section">
+        <div class="row">
+            <div class="large-12 columns text-center">
+                <p>EL VALOR DE TU</p>
+                <!-- <h2>{get_marca} {get_modelo} {get_version}, {get_ano}</h2> -->
+                <h2>{post_marca} {post_version}, {post_ano}</h2>
+                <p>ES DE</p>
+                <h3>US$ {exp:number_formatter:format decimals='0' dec_point='.' thousands_sep=','}{post_precio}{/exp:number_formatter:format}<!-- <span id="low-price">.00</span> --></h3>
+            </div>
+        </div>
+    </section>
+    {/exp:get_post_vars}
+    <div class="fixed-footer-top-trigger"></div>
+
+    <section id="third-section">
+        <div class="row">
+            <div class="large-12 large-centered small-11 small-centered text-center columns">
+                <p class="marketing">CON LA COMPRA DE CUALQUIERA DE ESTAS COBERTURAS LLÉVATE <span>GRATIS</span> NUESTRO SEGURO DE ACCIDENTES PERSONALES <a href="#" class="show-for-large-up" data-reveal-id="accidentes-personales">ver más &raquo;</a><a href="{path='content/pop-ups'}#accidentes-personales" class="hide-for-large-up" target="_blank">ver más &raquo;</a></p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-12 columns">
+                <div class="row">
+                    <div class="large-3 large-uncentered medium-4 medium-offset-2 small-9 small-centered text-center columns">
+                        <div class="info-row">
+                            <!-- <a href="#" class="info-tooltip" data-reveal-id="responsabilidad-civil">?</a> -->
+                            <p id="info-price-first" class="info-price">S/.15</p>
+                            <p class="info-description">PRIMA MENSUAL</p>
+                            <form class="info-form" action="#">
+                                <span class="selector">
+                                    <select name="selector" id="select-suma">
+                                        <option value="15">HASTA S/. 50,000</option>
+                                        <option value="20">HASTA S/. 100,000</option>
+                                        <option value="25">HASTA S/. 150,000</option>
+                                        <option value="30">HASTA S/. 200,000</option>
+                                        <option value="35">HASTA S/. 250,000</option>
+                                        <option value="40">HASTA S/. 300,000</option>
+                                    </select>
+                                </span>
+                            </form>
+                            <div class="info-bottom">
+                                <a href="#" class="info-tooltip show-for-medium-up" data-reveal-id="responsabilidad-civil">RESPONSABILIDAD CIVIL</a>
+                                <a href="{path='content/pop-ups'}#responsabilidad-civil" class="info-tooltip show-for-small-only" target="_blank">RESPONSABILIDAD CIVIL</a>
+                            </div>
+                        </div>
+
+                        <div class="checkbox-row">
+                            <form class="checkbox-form" action="#">
+                                <input id="c1" type="checkbox" value="15"><label for="c1"><span></span><br>Agregar a mi Cotización</label>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="large-3 large-uncentered medium-4 small-9 small-centered text-center columns">
+                        <div class="info-row">
+                            <!-- <a href="" class="info-tooltip" data-reveal-id="perdida-robo">?</a> -->
+                            <p class="info-price">S/.19</p>
+                            <p class="info-description">PRIMA MENSUAL</p>
+                            <div class="info-bottom">
+                                <a href="#" class="info-tooltip show-for-medium-up" data-reveal-id="perdida-robo">PÉRDIDA TOTAL POR ROBO</a>
+                                <a href="{path='content/pop-ups'}#perdida-robo" class="info-tooltip show-for-small-only" target="_blank">PÉRDIDA TOTAL POR ROBO</a>
+                            </div>
+                        </div>
+
+                        <div class="checkbox-row">
+                            <form class="checkbox-form" action="#">
+                                <input id="c2" type="checkbox" value="19"><label for="c2"><span></span><br>Agregar a mi Cotización</label>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="medium-2 columns"></div>
+
+                    <div class="large-3 large-uncentered medium-4 medium-offset-2 small-9 small-centered text-center columns">
+                        <div class="info-row">
+                            <!-- <a href="" class="info-tooltip" data-reveal-id="perdida-choque">?</a> -->
+                            <p class="info-price">S/.35</p>
+                            <p class="info-description">PRIMA MENSUAL</p>
+                            <div class="info-bottom">
+                                <a href="#" class="info-tooltip show-for-medium-up" data-reveal-id="perdida-choque">PÉRDIDA TOTAL POR CHOQUE</a>
+                                <a href="{path='content/pop-ups'}#perdida-choque" class="info-tooltip show-for-small-only" target="_blank">PÉRDIDA TOTAL POR CHOQUE</a>
+                            </div>
+                        </div>
+
+                        <div class="checkbox-row">
+                            <form class="checkbox-form" action="#">
+                                <input id="c3" type="checkbox" value="35"><label for="c3"><span></span><br>Agregar a mi Cotización</label>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="large-3 large-uncentered medium-4 small-9 small-centered text-center columns">
+                        <div class="info-row">
+                            <!-- <a href="" class="info-tooltip" data-reveal-id="propio-choque">?</a> -->
+                            <p class="info-price">S/.49</p>
+                            <p class="info-description">PRIMA MENSUAL</p>
+                            <div class="info-bottom">
+                                <a href="#" class="info-tooltip show-for-medium-up" data-reveal-id="propio-choque">DAÑO PROPIO POR CHOQUE</a>
+                                <a href="{path='content/pop-ups'}#propio-choque" class="info-tooltip show-for-small-only" target="_blank">DAÑO PROPIO POR CHOQUE</a>
+                            </div>
+                        </div>
+
+                        <div class="checkbox-row">
+                            <form class="checkbox-form" action="#">
+                                <input id="c4" type="checkbox" value="49"><label for="c4"><span></span><br>Agregar a mi Cotización</label>
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="medium-2 columns"></div>
+                </div>
+
+                <!-- <div class="row">
+                    <div class="large-3-custom text-center columns checkbox-row">
+                        <form class="checkbox-form" action="#">
+                            <input id="c1" type="checkbox"><label for="c1"><span></span><br>Agrega a mi Cotización</label>
+                        </form>
+                    </div>
+                    <div class="large-3-custom text-center columns checkbox-row">
+                        <form class="checkbox-form" action="#">
+                            <input id="c2" type="checkbox"><label for="c2"><span></span><br>Agrega a mi Cotización</label>
+                        </form>
+                    </div>
+                    <div class="large-3-custom text-center columns checkbox-row">
+                        <form class="checkbox-form" action="#">
+                            <input id="c3" type="checkbox"><label for="c3"><span></span><br>Agrega a mi Cotización</label>
+                        </form>
+                    </div>
+                    <div class="large-3-custom text-center columns checkbox-row">
+                        <form class="checkbox-form" action="#">
+                            <input id="c4" type="checkbox"><label for="c4"><span></span><br>Agrega a mi Cotización</label>
+                        </form>
+                    </div>
+                </div> -->
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-9 large-centered medium-10 medium-centered small-10 small-centered columns">
+                <div class="row total">
+                    <div class="large-4 columns medium-4 text-center total-left">
+                        <p>TOTAL PRIMA MENSUAL</p>
+                        <p id="suma">S/.50</p>
+                    </div>
+                    <div id="message" class="large-8 columns medium-8 total-right">
+                        <p>AGREGA LA COBERTURA DE <b>PÉRDIDA TOTAL POR ROBO</b> Y LLÉVATE <b>GRATIS</b> LA COBERTURA DE <b>ASISTENCIA VIAL</b>.</p>
+                    </div>
+                    <a id="asist-vial" class="show-for-large-up" href="#" data-reveal-id="asistencia-vial">ver más &raquo;</a>
+                    <a id="asist-vial" href="{path='content/pop-ups'}#asistencia-vial" class="hide-for-large-up" target="_blank">ver más &raquo;</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="row">
+            <div class="large-9 large-centered small-11 small-centered text-center columns">
+                <p class="marketing">DESCARGA TU COTIZACIÓN Y LLÉVALA AL PUNTO DE VENTA MÁS CERCANO</p>
+            </div>
+        </div> -->
+
+        <div class="row">
+            <div class="large-9 large-centered small-10 small-centered columns text-center">
+                <div class="row" id="radio">
+                    <div class="large-5 medium-5 small-12 columns border-naranja">
+                        <input id="contact-option-1" type="radio" name="contact-radio" value="contact-1">
+                        <label class="radio-label" for="contact-option-1">Descarga tu Cotización.</label>
+                    </div>
+                    <div class="small-12 large-2 medium-1 columns show-for-small-only"><p class="radio-middle">ó</p></div>
+                    <div class="large-5 medium-6 small-12 columns border-naranja">
+                        <input id="contact-option-2" type="radio" name="contact-radio" value="contact-2">
+                        <label class="radio-label" for="contact-option-2">Contáctenme por teléfono.</label>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div id="contact" class="large-6 large-uncentered medium-6 medium-uncentered small-10 small-centered columns">
+                <form id="contact-form" method="POST" action="/?/content/gracias" data-abide>
+                    <input type="hidden" name="XID" value="{XID_HASH}" /> 
+                    <div class="row">
+                        <div class="large-6 columns">
+                            <label class="ie9label" for="name"  >Nombre</label>
+                            <input type="text" name="name" placeholder="Nombre" required pattern="[a-zA-Z]+">
+                            <small class="error">Debe ingresar su nombre.</small>
+                        </div>
+                        <div class="large-6 columns">
+                            <label class="ie9label" for="surname" >Apellido</label>
+                            <input type="text" name="surname" placeholder="Apellido" required pattern="[a-zA-Z]+">
+                            <small class="error">Debe ingresar su apellido.</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <label class="ie9label" for="email" >E-mail</label>
+                            <input type="email" name="email" placeholder="Correo Electrónico" required>
+                            <small class="error">Debe ingresar su correo electrónico.</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <label class="ie9label" for="dni" >DNI</label>
+                            <input type="text" name="dni" placeholder="DNI" pattern="dni" required min="8" max="8" >
+                            <small class="error">Debe ingresar su DNI (numérico).</small>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <label class="ie9label" for="phone" >Teléfono</label>
+                            <input type="text" name="phone" placeholder="Teléfono" pattern="telef" required min="7" max="9">
+                            <small class="error">Debe ingresar su teléfono (numérico).</small>
+                        </div>
+                        {exp:get_post_vars parse="inward"}
+                            <input type="hidden" name="brand" value="{post_marca}">
+                            <input type="hidden" name="model" value="{post_modelo}">
+                            <input type="hidden" name="ano" value="{post_ano}">
+                            <input type="hidden" name="version" value="{post_version}">
+                            <input type="hidden" name="precio" value="{post_precio}">
+                            <input id="tipo_respci" type="hidden" name="tipo_respci">
+                            <input id="respci" type="hidden" name="respci">
+                            <input id="ptr" type="hidden" name="ptr">
+                            <input id="c3_form" type="hidden" name="ptch">
+                            <input id="c4_form" type="hidden" name="dpch">
+                            <input id="suma_form" type="hidden" name="total_prima">
+                        {/exp:get_post_vars}
+                    </div>
+                    <!--
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <input id="checkbox1" type="checkbox"><label for="checkbox1"><span></span>Enviar copia de la cotización a mi correo</label>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="large-12 columns">
+                            <input id="checkbox2" type="checkbox"><label for="checkbox2"><span></span>Quiero que me contacten por teléfono</label>
+                        </div>
+                    </div>
+                    -->
+                    <div class="row">
+                        <div class="large-8 medium-8 small-12 small-centered columns">
+                            <button id="form_button" class="button-orange" type="submit">DESCARGAR COTIZACIÓN EN PDF</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div id="locate" class="large-5 large-uncentered medium-5 medium-uncentered small-10 small-centered columns">
+                <div class="row">
+                    <div class="large-12 columns">
+                        <p class="marketing locate">UBICA EL PUNTO DE VENTA MÁS CERCANO</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <form id="locate-form" action="#">
+                        <input type="hidden" name="XID" value="{XID_HASH}" /> 
+                        <div class="large-6 columns">
+                            <span class="selector">
+                                   {exp:filtros:region}
+                            </span>
+                        </div>
+                        <div class="large-6 columns">
+                            <span class="selector">
+                                <select name="distrito" id="distrito">
+                                   {exp:filtros:district region="@@@"}
+                                </select>
+                            </span>
+                        </div>
+                    </form>
+                </div>
+                <div class="row">
+                    <div id="result" class="large-12 columns">
+                    </div>
+                </div>
+            </div>
+        </div>
+   </section>
+
+{embed="includes/footer"}

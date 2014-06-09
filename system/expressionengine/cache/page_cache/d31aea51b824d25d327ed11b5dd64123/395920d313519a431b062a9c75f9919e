@@ -1,0 +1,76 @@
+1392735521
+{if logged_in}
+{embed="includes/header"}   
+    <section id="first-section">
+        <div class="row">
+            <div class="large-12 text-center columns">
+                <h1 id="primary">¿TE ROBARON?</h1>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-10 large-centered columns">
+                <div class="row">
+                    <div id="price-msg" class="large-6 small-12 columns">
+                        <p>ASEGURA TU AUTO DESDE</p>
+                    </div>
+                    <div id="price" class="large-5 large-uncentered medium-6 medium-centered small-12 small-centered columns">
+                        <!-- <p class="price-first">S/.</p> -->
+                        <p class="price-quantity">S/. 19</p>
+                        <p class="price-montly">MENSUALES</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="large-12 text-center medium-9 small-10 small-centered columns">
+                <img src="img/car.png" alt="car">
+            </div>
+            <div id="loading" class="loading large-1 large-centered text-center medium-1 medium-centered small-1 small-centered columns">
+            </div>
+        </div>
+
+        <div class="row full-width">
+            <div class="large-12 large-uncentered medium-10 medium-centered small-12 small-centered columns">
+                <div class="row">
+                    <form id="cotizar" class="quote" method="POST" action="#">
+                        <input type="hidden" name="XID" value="{XID_HASH}" /> 
+                        <div class="large-3 large-uncentered medium-8 medium-centered columns">
+                            <span class="selector-big">
+                                <select name="marca" id="marca" > <option value="MARCA" selected>MARCA</option><option value=Alfa-Romeo>Alfa Romeo</option><option value=Audi>Audi</option><option value=BMW>BMW</option><option value=Brillance>Brillance</option><option value=BYD>BYD</option><option value=Changan>Changan</option><option value=Chery>Chery</option><option value=Chevrolet>Chevrolet</option><option value=Chrysler>Chrysler</option><option value=Citroen>Citroen</option><option value=Daewoo>Daewoo</option><option value=Daihatsu>Daihatsu</option><option value=Dodge>Dodge</option><option value=Dongfeng>Dongfeng</option><option value=Faw>Faw</option><option value=Fiat>Fiat</option><option value=Ford>Ford</option><option value=Foton>Foton</option><option value=Geely>Geely</option><option value=Great-Wall>Great Wall</option><option value=Hafei>Hafei</option><option value=Haima>Haima</option><option value=Honda>Honda</option><option value=Hyundai>Hyundai</option><option value=JAC>JAC</option><option value=Jeep>Jeep</option><option value=Kia>Kia</option><option value=Land-Rover>Land Rover</option><option value=Lifan>Lifan</option><option value=Mahindra>Mahindra</option><option value=Mazda>Mazda</option><option value=Mercedes-Benz>Mercedes Benz</option><option value=MG>MG</option><option value=Mitsubishi>Mitsubishi</option><option value=Nissan>Nissan</option><option value=Peugeot>Peugeot</option><option value=Renault>Renault</option><option value=Rover>Rover</option><option value=Seat>Seat</option><option value=Skoda>Skoda</option><option value=SMA>SMA</option><option value=Ssang-Yong>Ssang Yong</option><option value=Subaru>Subaru</option><option value=Suzuki>Suzuki</option><option value=Toyota>Toyota</option><option value=Volkswagen>Volkswagen</option><option value=Volvo>Volvo</option><option value=ZNA>ZNA</option><option value=Zotye>Zotye</option><option value=ZXAuto>ZXAuto</option></select>
+                            </span>
+                        </div>
+                        <div class="large-2 large-uncentered medium-8 medium-centered columns">
+                            <span class="selector-big">
+                                <select name="modelo" id="modelo">
+                                  <option value="MODELO" selected>MODELO</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="large-2 large-uncentered medium-8 medium-centered columns">
+                            <span class="selector-big">
+                                <select name="version" id="version">
+                                  <option value="VERSIÓN" selected>VERSIÓN</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="large-2 large-uncentered medium-8 medium-centered columns">
+                            <span class="selector-big">
+                                <select name="precio" id="ano">
+                                  <option value="AÑO" selected>AÑO</option>
+                                </select>
+                            </span>
+                        </div>
+                        <div class="large-3 large-uncentered medium-8 medium-centered columns">
+                        <input id="form_ano" type="hidden" name="ano">
+                        <button class="expand" type="submit">COTIZAR</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+{embed="includes/footer"}
+{/if}

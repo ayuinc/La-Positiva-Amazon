@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="12px" height="9px" viewBox="0 0 12 9" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:sketch="http://www.bohemiancoding.com/sketch/ns">
+    <title>down-arrow-gray</title>
+    <description>Created with Sketch (http://www.bohemiancoding.com/sketch)</description>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" sketch:type="MSPage">
+        <g id="down_arrow" sketch:type="MSLayerGroup" transform="translate(1.000000, 0.000000)" fill="#CCCCCC">
+            <g id="Page-1" sketch:type="MSShapeGroup">
+                <path d="M5,0 L10.4,9 L-0.4,9 L5,0 Z" id="Triangle-1" transform="translate(5.100000, 4.500000) scale(1, -1) translate(-5.100000, -4.500000) "></path>
+            </g>
+        </g>
+    </g>
+</svg>

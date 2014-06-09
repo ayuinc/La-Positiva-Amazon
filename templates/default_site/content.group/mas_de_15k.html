@@ -1,0 +1,28 @@
+{embed="includes/header"}
+    {exp:get_post_vars parse="inward"}
+    <section id="second-section">
+        <div class="row">
+            <div class="large-12 columns text-center">
+                <p>EL VALOR DE TU</p>
+                <h2>{post_marca} {post_version}, {post_ano}</h2>
+                <p>ES DE</p>
+                <h3>US$ {exp:number_formatter:format decimals='0' dec_point='.' thousands_sep=','}{post_precio}{/exp:number_formatter:format}<!-- <span id="low-price">.00</span> --></h3>
+            </div>
+        </div>
+    </section>
+    {/exp:get_post_vars}
+    <section id="fourth-section">
+        <div class="row">
+            <div id="auto-seguro" class="large-4 large-uncentered medium-6 medium-centered small-10 small-centered text-center columns">
+                <!-- <a href="#" class="info-tooltip" data-reveal-id="pack-total">?</a> -->
+                <p>AUTO TOTAL POSITIVA</p>
+            </div>
+            <div id="auto-seguro-msg" class="large-8 large-uncentered medium-6 medium-centered small-10 small-centered columns">
+                <p>EL VALOR COMERCIAL DE TU AUTO ESTÁ POR ENCIMA DE LA SUMA ASEGURABLE DE NUESTRO PRODUCTO PACK VEHICULAR, POR LO QUE TE OFRECEMOS NUESTRO SEGURO <span class="orange"><b>AUTO TOTAL POSITIVA</b></span>, EL CUAL PERMITE ASEGURAR TU AUTO CONTRA <span class="orange"><b>TODO RIESGO</b></span>.</p>
+                <p class="text-center">
+                    <a href="http://www.lapositiva.com.pe/generales/jerarquia/730/auto-total-positiva/jer.730" class="button button-orange" target="_blank">MÁS INFORMACIÓN</a>
+                </p>
+            </div>
+        </div>
+    </section>
+{embed="includes/footer"}
