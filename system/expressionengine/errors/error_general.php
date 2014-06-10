@@ -59,7 +59,7 @@ div#branding a img {
 </head>
 <body>
 <?php if (defined('BASE')):?><div id="branding"></div><?php endif; ?>
-
+<p>error general</p>
 	<div id="error_content">
 		<h4>Usted esta perdido, regrese al <a href="http://packvehicular.com">inicio</a></h4>
 	</div>

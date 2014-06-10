@@ -26,6 +26,7 @@ margin: 			0 0 4px 0;
 </style>
 </head>
 <body>
+	<p>error 404</p>
 	<div id="content">
 		<h4>Usted esta perdido, regrese al <a href="http://packvehicular.com">inicio</a></h4>
 	</div>
