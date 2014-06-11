@@ -1,3 +1,7 @@
+$(function () {
+  init();
+});
+
 $(document).foundation();
 
 $(function() {
@@ -19,7 +23,7 @@ $(function() {
       top: 'auto', // Top position relative to parent in px
       left: 'auto' // Left position relative to parent in px
     };
-
+    
     var target = document.getElementById('loading');
     var spinner = new Spinner(opts).spin(target);
 });
@@ -84,13 +88,96 @@ $(function () {
   });
 });
 
-$(function () {
-  init();
-});
-
 function init(){
   resultado ="";
 
+  inhabilitados = [
+    {
+      "Marca": "Chevrolet",
+      "Modelo": "Aveo"
+    },
+    {
+      "Marca": "Mazda",
+      "Modelo": "3"
+    },
+    {
+      "Marca": "Mitsubishi",
+      "Modelo": "Montero"
+    },
+    {
+      "Marca": "Mitsubishi",
+      "Modelo": "Nativa"
+    },
+    {
+      "Marca": "Nissan",
+      "Modelo": "Sentra"
+    },
+    {
+      "Marca": "Nissan",
+      "Modelo": "Tiida"
+    },
+    {
+      "Marca": "Subaru",
+      "Modelo": "Impreza"
+    },
+    {
+      "Marca": "Toyota",
+      "Modelo": "Yaris"
+    },
+    {
+      "Marca": "Toyota",
+      "Modelo": "Corolla"
+    },
+    {
+      "Marca": "Toyota",
+      "Modelo": "RAV4"
+    },
+    {
+      "Marca": "Toyota",
+      "Modelo": "FJ Cruiser"
+    },
+    {
+      "Marca": "Toyota",
+      "Modelo": "Fortuner"
+    },
+    {
+      "Marca": "Toyota",
+      "Modelo": "4Runner"
+    },
+    {
+      "Marca": "Toyota",
+      "Modelo": "Land Cruiser"
+    },
+    {
+      "Marca": "Toyota",
+      "Modelo": "Land Cruiser Prado"
+    },
+    {
+      "Marca": "Volkswagen",
+      "Modelo": "Bora"
+    },
+  ];
+
+  brand = $('input[name="brand"]').val();
+  model = $('input[name="model"]').val();
+
+  found = false;
+  $.each(inhabilitados, function(index, item) {
+    if(item.Marca == brand || item.Modelo == model)
+      found = true;
+  });
+  
+  if(found) {
+	  $('#c2').prop('disabled', true);
+	  $('#row-perdida-robo').attr('data-tooltip', '');
+	  $('#row-perdida-robo').attr('title', 'No aplica para la cobertura de Pérdida total por robo.');
+	  $('#row-perdida-robo').addClass('tip-top');
+	  $('#row-perdida-robo').find('.info-row').addClass('disabled-section');
+	  $('#row-perdida-robo').find('.checkbox-row').addClass('disabled-section');
+  }
+  
+  $(document).foundation();
+  
   $('#c1').attr('checked',true);
   $('#c2').attr('checked',false);
   $('#c3').attr('checked',true);
@@ -140,14 +227,10 @@ function count(checkbox){
          $('#suma').html('S/.'+resultado);
          if($("#c2").is(':checked')){
             $("#ptr").val($("#c2").val());
-            mensaje = '<p>LAS COBERTURAS SELECCIONADAS INCLUYEN <b>GRATIS</b> LA COBERTURA DE <b>ASISTENCIA VIAL</b>.</p>';
-            $("#message").html(mensaje);
          }
          else{
             $("#ptr").val("No Contratado");
-            mensaje = '<p>AGREGA LA COBERTURA DE <b>PÉRDIDA TOTAL POR ROBO</b> Y LLÉVATE <b>GRATIS</b> LA COBERTURA DE <b>ASISTENCIA VIAL</b>.</p>';
-            $("#message").html(mensaje);
-         } 
+         }
      }
      else{
          $("#respci").val("No Contratado");
@@ -156,14 +239,10 @@ function count(checkbox){
          $('#suma').html('S/.'+resultado);
          if($("#c2").is(':checked')){
             $("#ptr").val($("#c2").val());
-            mensaje = '<p>AGREGA LA COBERTURA DE <b>RESPONSABILIDAD CIVIL</b> Y LLÉVATE <b>GRATIS</b> LA COBERTURA DE <b>ASISTENCIA VIAL</b>.</p>';
-            $("#message").html(mensaje);
          }
          else{
             $("#ptr").val("No Contratado");
-            mensaje = '<p>SI SELECCIONAS LAS COBERTURAS DE <b>RESPONSABILIDAD CIVIL</b> + <b>PÉRDIDA TOTAL POR ROBO</b>, LLÉVATE <b>GRATIS</b> LA COBERTURA DE <b>ASISTENCIA VIAL</b>.</p>';
-            $("#message").html(mensaje);      
-         }  
+         }
      }
      $(document).foundation();
  });
@@ -177,14 +256,10 @@ function count(checkbox){
          $('#suma').html('S/.'+resultado);
          if($("#c1").is(':checked')){
              $("#respci").val($("#c1").val());
-             mensaje = '<p>LAS COBERTURAS SELECCIONADAS INCLUYEN <b>GRATIS</b> LA COBERTURA DE <b>ASISTENCIA VIAL</b>.</p>';
-             $("#message").html(mensaje);
          }
          else{
              $("#respci").val("No Contratado");
-             mensaje = '<p>AGREGA LA COBERTURA DE <b>RESPONSABILIDAD CIVIL</b> Y LLÉVATE <b>GRATIS</b> LA COBERTURA DE <b>ASISTENCIA VIAL</b>.</p>';
-             $("#message").html(mensaje);
-         } 
+         }
      }
      else{
          $("#ptr").val("No Contratado");
@@ -193,18 +268,31 @@ function count(checkbox){
          $('#suma').html('S/.'+resultado);
          if($("#c1").is(':checked')){
              $("#respci").val($("#c1").val());
-             mensaje = '<p>AGREGA LA COBERTURA DE <b>PÉRDIDA TOTAL POR ROBO</b> Y LLÉVATE <b>GRATIS</b> LA COBERTURA DE <b>ASISTENCIA VIAL</b>.</p>';
-             $("#message").html(mensaje);
          }
          else{
              $("#respci").val("No Contratado");
-             mensaje = '<p>SI SELECCIONAS LAS COBERTURAS DE <b>RESPONSABILIDAD CIVIL</b> + <b>PÉRDIDA TOTAL POR ROBO</b>, LLÉVATE <b>GRATIS</b> LA COBERTURA DE <b>ASISTENCIA VIAL</b>.</p>';
-             $("#message").html(mensaje); 
-         }  
+         }
      }
      $(document).foundation();
- });
+});
 
+$('.checkbox-form input[type="checkbox"]').click(function(){
+	checkedSize = $('.checkbox-form input:checked').length;
+	
+	if(checkedSize == 0) {
+		mensaje = '<p>AGREGA AL MENOS DOS COBERTURAS Y LLÉVATE <b>GRATIS</b> LA COBERTURA DE <b>ASISTENCIA VIAL</b>.</p>';
+        $("#message").html(mensaje);
+	} else {
+		if($('.checkbox-form input:checked').length >= 2){
+			mensaje = '<p>LAS COBERTURAS SELECCIONADAS INCLUYEN <b>GRATIS</b> LA COBERTURA DE <b>ASISTENCIA VIAL</b>.</p>';
+			$("#message").html(mensaje);
+		}
+		else {
+	    	mensaje = '<p>AGREGA CUALQUIER OTRA COBERTURA Y LLÉVATE <b>GRATIS</b> LA COBERTURA DE <b>ASISTENCIA VIAL</b>.</p>';
+			$("#message").html(mensaje);
+		}
+	}	
+})
 
 $( "#distrito" ).change(function (evt) {
 var str = "";
