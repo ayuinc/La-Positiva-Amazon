@@ -1047,7 +1047,7 @@ input[type=radio]:checked + .radio-label:before {
 /*Large screens*/
 @media only screen and (min-width: 64.063em) {
     #primary {
-        font-size: 4.5em;
+        font-size: 4.2em;
     }
 
     #price-msg {
